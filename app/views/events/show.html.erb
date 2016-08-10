@@ -1,0 +1,10 @@
+<% provide(:title, @event.title) %>
+
+<div class="container">
+  <div class="main-content">
+    <p id="notice"><%= notice %></p>
+
+    <%= link_to 'Edit', edit_event_path(@event) %> |
+    <%= link_to 'Back', events_path %>
+  </div>
+</div>
