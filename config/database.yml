@@ -30,9 +30,4 @@ test:
   database: ccc_demos_rails_test
 
 production:
-  <<: *default
-  host: 127.0.0.1
-  port: 5432
-  username: postgres
-  password: postgres
-  database: ccc_demos_rails_production
+  url: <%= ENV['DATABASE_URL'] %>
